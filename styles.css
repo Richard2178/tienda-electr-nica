@@ -1,0 +1,1145 @@
+/* ===== TIPOGRAFÍA GLOBAL ===== */
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+/* ===== ENCABEZADOS ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;      /* NEGRITA */
+  color: #222;
+}
+/* ===== ENCABEZADO CATÁLOGO ===== */
+.catalog-header h1 {
+  font-size: 36px;
+  font-weight: 700 !important;   /* 👈 AQUÍ ESTÁ LA CLAVE */
+}
+.catalog-header p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== TOP BAR GAMER ===== */
+.top-bar {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,   /* violeta */
+    #ec4899    /* rosado */
+  );
+  padding: 12px 0;
+}
+/* ===== ICONOS REDES SOCIALES ===== */
+.social-icons a {
+  color: #fff;                 /* blanco por defecto */
+  margin-right: 18px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.social-icons a:hover {
+  color: #000;                 /* negro al pasar */
+  transform: scale(1.2);
+}
+
+/* Click (activo) */
+.social-icons a:active {
+  color: #000;                 /* negro al hacer click */
+  transform: scale(1.15);
+}
+
+
+/* CARRITO */
+.cart-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.cart-icon span {
+  background: red;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* ===== HERO PRINCIPAL CON IMAGEN ===== */
+.hero-section {
+  position: relative;
+  height: 85vh;
+  background-image: url("../img/hero-tech-color.jpg");
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 78, 146, 0.45)
+  );
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 650px;
+  animation: fadeHero 1.2s ease;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #fff; /* 👈 título blanco */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* BOTÓN HERO */
+.btn-hero {
+  background: linear-gradient(135deg, #0d6efd, #00c6ff);
+  color: #fff;
+  padding: 12px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: linear-gradient(135deg, #000, #333);
+  transform: translateY(-4px);
+}
+
+/* ANIMACIÓN HERO */
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BOTÓN ANIMADO */
+.btn-animated {
+  transition: 0.3s;
+}
+
+.btn-animated:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== BIENVENIDA ===== */
+.welcome-section {
+  padding: 50px 0;
+  background-color:#eef1f4; /* gris muy suave */
+}
+
+.welcome-section h2 {
+  font-size: 32px;        /* título más grande */
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.welcome-section p {
+  max-width: 750px;      /* evita texto muy ancho */
+  margin: 0 auto;
+  font-size: 19px;       /* TEXTO MÁS GRANDE */
+  line-height: 1.85;      /* mejor lectura */
+  color: #555;
+}
+
+/* ===== PRODUCTOS (CARDS PROFESIONALES) ===== */
+.product-card {
+  position: relative;
+  border: none;
+  background: #fff;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* IMAGEN DEL PRODUCTO */
+.product-card img {
+  height: 180px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+/* NOMBRE DEL PRODUCTO */
+.product-card h6,
+.product-card h5 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* DESCRIPCIÓN */
+.product-card .desc {
+  font-size: 14px;
+  color: #666;
+  min-height: 40px;
+}
+
+/* PRECIO */
+.product-card .price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* ===== PRODUCTOS DESTACADOS ===== */
+.featured-card {
+  transition: 0.4s;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.featured-card:hover {
+  transform: translateY(-10px);
+}
+
+.featured-card img {
+  height: 200px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* BOTÓN CARRITO */
+.btn-cart {
+  background: #0d6efd;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-cart:hover {
+  background: #7c3aed; /* violeta premium */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== CARRUSEL CONTINUO MARCAS ===== */
+.brands-section {
+  padding: 60px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.brands-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.brands-track {
+  display: flex;
+  width: max-content;
+  animation: scrollBrands 20s linear infinite;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  width: 180px;
+  margin: 0 30px;
+}
+
+.brand-item img {
+  width: 100%;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.brand-item img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Animación continua */
+@keyframes scrollBrands {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* ===== NAVBAR BLANCO PROFESIONAL ===== */
+.custom-navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 12px 0;
+}
+
+/* Logo */
+.custom-navbar .navbar-brand {
+  color: #000;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #0d6efd;
+}
+
+/* Botones del menú */
+.nav-btn {
+  color: #000 !important;
+  padding: 8px 18px;
+  margin: 0 6px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.nav-btn:hover {
+  background-color: #0d6efd;
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(13,110,253,0.35);
+}
+
+/* Activo (página actual) */
+.nav-btn.active {
+  background-color: #0d6efd;
+  color: #fff !important;
+  box-shadow: 0 6px 15px rgba(13,110,253,0.35);
+}
+/* ===== ETIQUETA OFERTA ===== */
+.offer-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #dc2626; /* rojo */
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+/* ===== ENCABEZADO CATÁLOGO ===== */
+.catalog-header {
+  padding: 80px 0;
+  background: #f4f6f8;
+}
+
+.catalog-header h1 {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.catalog-header p {
+  font-size: 18px;
+  color: #555;
+}
+/* ===== FOOTER RSDIGITAL ===== */
+.rs-footer {
+  background: linear-gradient(
+    135deg,
+    #0d6efd,   /* azul botón */
+    #2563eb    /* azul más profundo */
+  );
+  color: #fff;
+  padding: 20px 0 8px; /* footer más compacto */
+}
+
+/* Títulos */
+.footer-title {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+/* Icono debajo del logo */
+.footer-icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: #e0f2fe;
+}
+
+/* Texto */
+.rs-footer p {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #f8fafc;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+/* Redes */
+.footer-social a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 14px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* Línea */
+.rs-footer hr {
+  border-color: rgba(255,255,255,0.3);
+  margin: 30px 0;
+}
+
+/* Copy */
+.footer-copy {
+  text-align: center;
+  font-size: 15px;
+  color: #e0f2fe;
+}
+/* ===== FORZAR TAMAÑO TEXTO FOOTER ===== */
+.rs-footer p,
+.rs-footer a,
+.rs-footer li {
+  font-size: 17px !important;
+}
+/* ===== CORREO EN FOOTER BLANCO ===== */
+.rs-footer a {
+  color: #fff !important;
+}
+/* ======================
+   SECCIÓN OFERTAS (INDEX)
+====================== */
+
+.ofertas-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.ofertas-container {
+  background-color: #eaeaea;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+/* CONTENEDOR DESCUENTOS */
+.descuentos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+/* TARJETA DESCUENTO */
+.descuento-vertical {
+  background-color: #d90429;
+  color: #fff;
+  height: 260px;
+  max-width: 260px;
+  flex: 0 0 260px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* TEXTO GRANDE 30% / 60% */
+.descuento-vertical span {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.descuento-vertical small {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.descuento-vertical p {
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
+
+/* BLOQUE DERECHO (SEPARADO DE LOS CUADROS) */
+.ofertas-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 120px;   /* ⬅ separación clara de los cuadros */
+}
+
+/* TEXTO */
+.ofertas-texto {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 35px;
+  max-width: 420px;
+}
+
+/* BOTÓN IR A OFERTAS */
+.btn-ofertas {
+  background-color: #d90429;   /* ROJO base */
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* HOVER → PÚRPURA (igual Agregar al carrito) */
+.btn-ofertas:hover {
+  background-color: #7c3aed;   /* púrpura */
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(124,58,237,0.35);
+}
+
+/* CLICK */
+.btn-ofertas:active {
+  background-color: #5b21b6;   /* púrpura más oscuro */
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(124,58,237,0.3);
+}
+
+
+/* FOCUS (teclado / click) */
+.btn-ofertas:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.4);
+}
+/* ======================
+   SECCIÓN SOBRE RSDIGITAL
+====================== */
+
+.sobre-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.sobre-container {
+  background-color: #f8fafc;
+  border-radius: 18px;
+  padding: 40px;
+}
+
+
+/* TÍTULO */
+.sobre-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1e293b;   /* ⬅️ gris oscuro elegante */
+}
+
+
+/* TEXTO */
+.sobre-texto {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+  max-width: 450px;
+}
+
+/* TARJETA IMAGEN (MISMO TAMAÑO DESCUENTO) */
+.sobre-card {
+  width: 260px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.35s ease;
+}
+
+/* IMAGEN */
+.sobre-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* HOVER → SE LEVANTA + BORDE ILUMINADO */
+.sobre-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.7),
+              0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* BOTÓN NOSOTROS */
+.btn-sobre {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 14px 38px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* HOVER IGUAL A "AGREGAR AL CARRITO" */
+.btn-sobre:hover {
+  background-color: #7c3aed;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(124,58,237,0.35);
+}
+/* ======================
+   SECCIÓN SERVICIOS
+====================== */
+
+.servicios-section {
+  background: linear-gradient(
+    135deg,
+    #1e293b,   /* azul gris oscuro */
+    #334155
+  );
+  color: #fff;
+}
+
+/* TÍTULO */
+.servicios-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* TARJETA SERVICIO (NORMAL) */
+.servicio-card {
+  display: block;
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  text-align: center;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ICONO */
+.servicio-card i {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  transition: all 0.35s ease;
+}
+
+/* TEXTO */
+.servicio-card h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.servicio-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ===== HOVER ===== */
+.servicio-card:hover {
+  background: #ffffff;
+  color: #0d6efd;                 /* AZUL */
+  transform: translateY(-12px);
+
+  box-shadow:
+    0 0 0 3px rgba(124,58,237,0.7),   /* violeta */
+    0 0 25px rgba(236,72,153,0.45),   /* rosado */
+    0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* ICONO HOVER */
+.servicio-card:hover i {
+  color: #0d6efd;
+  transform: scale(1.15);
+}
+
+/* TEXTO HOVER */
+.servicio-card:hover h5,
+.servicio-card:hover p {
+  color: #0d6efd;
+}
+
+/* CLICK */
+.servicio-card:active {
+  transform: translateY(-6px) scale(0.98);
+}
+
+/* QUITAR SUBRAYADO */
+.servicio-card:hover,
+.servicio-card:focus {
+  text-decoration: none;
+}
+
+/* ======================
+   RESPONSIVE OFERTAS
+====================== */
+
+@media (max-width: 992px) {
+
+  .descuentos-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;          /* ⬅ permite bajar */
+  }
+
+  .descuento-vertical {
+    margin-bottom: 20px;
+  }
+
+  .ofertas-texto {
+    text-align: center;
+    margin: 25px auto;
+  }
+
+  .btn-ofertas {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .descuento-vertical {
+    height: 260px;
+    max-width: 220px;
+  }
+
+  .ofertas-texto {
+    font-size: 1.3rem;
+  }
+}
+/* ======================
+   RESPONSIVE SOBRE NOSOTROS
+====================== */
+
+@media (max-width: 992px) {
+
+  .sobre-container {
+    text-align: center;
+  }
+
+  .sobre-container img {
+    margin: 30px auto 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .sobre-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-container p {
+    font-size: 0.95rem;
+  }
+}
+/* ======================
+   RESPONSIVE SERVICIOS
+====================== */
+
+@media (max-width: 992px) {
+  .servicio-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicio-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .servicios-title {
+    font-size: 1.8rem;
+  }
+
+  .servicio-card i {
+    font-size: 3rem;
+  }
+}
+/* ======================
+   RESPONSIVE FOOTER
+====================== */
+
+@media (max-width: 768px) {
+
+  .rs-footer {
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 15px;
+  }
+}
+
+.servicio-detalle {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8fafc;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* CUANDO SE SELECCIONA */
+.servicio-detalle:target {
+  background-color: #e0f2fe;
+  border-left: 6px solid #0d6efd;
+
+  /* 🔼 elevación suave */
+  transform: translateY(-6px);
+
+  /* sombra premium */
+  box-shadow: 0 12px 28px rgba(13, 110, 253, 0.25);
+}
+/* ======================
+   SECCIÓN QUIÉNES SOMOS
+====================== */
+
+.about-intro {
+  background-color: #f7f8fa;
+}
+
+/* ====================== 
+   SECCIÓN NUESTRA ESENCIA
+====================== */
+
+.about-section {
+  background: linear-gradient(
+    135deg,
+    #1e293b,
+    #334155
+  );
+}
+
+
+/* TARJETAS MISIÓN / VISIÓN */
+.about-card {
+  background: #ffffff;
+  padding: 32px 26px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  height: 100%;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+  border: 2px solid transparent;
+}
+
+/* HOVER → SOBRESALE */
+.about-card:hover {
+  transform: translateY(-12px);
+  border: 2px solid #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37,99,235,0.25),
+    0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* TÍTULO */
+.about-card h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+/* CAMBIO COLOR TÍTULO AL HOVER */
+.about-card:hover h4 {
+  color: #2563eb;
+}
+
+/* TEXTO */
+.about-card p {
+  color: #555;
+  line-height: 1.65;
+}
+
+/* ======================
+   SECCIÓN VALORES
+====================== */
+
+.valores-section {
+  background-color: #f7f8fa; /* gris premium sutil */
+}
+
+.valores-desc {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Tarjeta valor */
+.valor-card {
+  background: #ffffff;
+  padding: 35px 20px;
+  border-radius: 18px;
+  height: 100%;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* Hover → se levanta + ilumina */
+.valor-card:hover {
+  transform: translateY(-12px);
+  border: 2px solid #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37,99,235,0.25),
+    0 18px 40px rgba(0,0,0,0.22);
+}
+
+/* Icono */
+.valor-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #1e293b; /* azul gris elegante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+
+.valor-icon i {
+  font-size: 2.6rem; /* grande pero elegante */
+  color: #ffffff;
+}
+
+/* Cambio de color en hover */
+.valor-card:hover .valor-icon {
+  background: #2563eb;
+  box-shadow: 0 0 0 6px rgba(37,99,235,0.25);
+}
+
+/* Título */
+.valor-card h5 {
+  font-weight: 700;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+.valor-card:hover h5 {
+  color: #2563eb;
+}
+/* ======================
+   SECCIÓN CONTACTO
+====================== */
+
+.contact-section {
+  background-color: #f7f8fa; /* fondo claro elegante */
+}
+
+/* COLUMNA IZQUIERDA */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 32px;
+  color: #2563eb; /* azul profesional */
+  margin-bottom: 10px;
+}
+
+.contact-item h6 {
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-item a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* FORMULARIO */
+.contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* CAMPOS */
+.form-control {
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.25);
+}
+
+/* BOTÓN */
+.btn-contact {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #1e40af;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(37,99,235,0.35);
+}
+
+/* MENSAJE DE ÉXITO */
+#formSuccess {
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-item {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+}
+/* ======================
+   PÁGINAS LEGALES / INFO
+====================== */
+
+.info-section {
+  background-color: #f7f8fa; /* fondo sutil premium */
+}
+
+.info-title {
+  font-weight: 800;
+  color: #1e293b;
+}
+
+/* Tarjeta */
+.info-card {
+  background: #ffffff;
+  padding: 28px 30px;
+  border-radius: 18px;
+  border: 2px solid transparent;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+}
+
+/* Hover → se levanta */
+.info-card:hover {
+  transform: translateY(-10px);
+  border: 2px solid #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37,99,235,0.2),
+    0 18px 40px rgba(0,0,0,0.22);
+}
+
+/* Subtítulo */
+.info-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+.info-card:hover h5 {
+  color: #2563eb;
+}
+
+/* Texto */
+.info-card p {
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+
