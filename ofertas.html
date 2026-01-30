@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ofertas | RSDigital Store</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ===== HEADER SUPERIOR ===== -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- REDES SOCIALES -->
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/593099626985" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- CARRITO -->
+    <div class="cart-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+      <i class="fas fa-cart-shopping"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+  </div>
+</div>
+<!-- NAVBAR NUEVO -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">RSDigital Store</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link nav-btn" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link nav-btn" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link nav-btn" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link nav-btn active" href="ofertas.html">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link nav-btn" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link nav-btn" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="ofertas-section py-5">
+  <div class="container">
+    <h2 class="text-center">Ofertas Especiales</h2>
+    <div class="alert alert-success text-center mt-4">
+      🔥 Descuentos desde el 30% hasta el 50% en productos seleccionados 🔥
+    </div>
+    <div class="row g-4">
+      <!-- cards -->
+    </div>
+  </div>
+</section>
+  
+<!-- PRODUCTOS -->
+<section class="container my-5">
+  <div class="row g-4">
+
+    <!-- PRODUCTO -->
+    <div class="col-md-3">
+      <div class="card product-card text-center">
+        <span class="offer-badge">OFERTA</span>
+        <img src="img/flash.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6>Memoria USB 64GB</h6>
+          <p class="desc">Almacenamiento rápido y seguro.</p>
+          <p class="price">$5</p>
+          <button class="btn btn-cart" onclick="addToCart('Memoria USB 64GB', 5)">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card text-center">
+        <span class="offer-badge">OFERTA</span>
+        <img src="img/mouse.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6>Mouse Inalámbrico</h6>
+          <p class="desc">Precisión y comodidad.</p>
+          <p class="price">$17</p>
+          <button class="btn btn-cart" onclick="addToCart('Mouse Inalámbrico', 17)">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card text-center">
+        <span class="offer-badge">OFERTA</span>
+        <img src="img/disco.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6>Disco Duro 1TB</h6>
+          <p class="desc">Gran capacidad y rendimiento.</p>
+          <p class="price">$30</p>
+          <button class="btn btn-cart" onclick="addToCart('Disco Duro 1TB', 30)">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card text-center">
+        <span class="offer-badge">OFERTA</span>
+        <img src="img/disco-externo.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6>Disco Externo 1TB</h6>
+          <p class="desc">Respaldo seguro y portátil.</p>
+          <p class="price">$100</p>
+          <button class="btn btn-cart" onclick="addToCart('Disco Externo 1TB', 100)">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <div class="alert alert-warning text-center">
+    <h5 class="mb-2">Condiciones de productos en oferta</h5>
+    <p class="mb-0">
+      Los productos adquiridos en la sección de ofertas corresponden a promociones
+      especiales por tiempo limitado. Estos productos no cuentan con garantía y
+      no aplican a cambios ni devoluciones.
+    </p>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN SERVICIOS ===== -->
+<section class="servicios-section py-5">
+
+  <div class="container text-center">
+    <h2 class="servicios-title mb-5">Nuestros Servicios</h2>
+
+    <div class="row g-4">
+
+      <!-- SERVICIO 1 -->
+      <div class="col-md-3">
+        <a href="servicios.html" class="servicio-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h5>Garantía</h5>
+          <p>Respaldo y seguridad en cada compra.</p>
+        </a>
+      </div>
+
+      <!-- SERVICIO 2 -->
+      <div class="col-md-3">
+        <a href="servicios.html" class="servicio-card">
+          <i class="fa-solid fa-headset"></i>
+          <h5>Soporte Técnico</h5>
+          <p>Asistencia especializada y confiable.</p>
+        </a>
+      </div>
+
+      <!-- SERVICIO 3 -->
+      <div class="col-md-3">
+        <a href="servicios.html" class="servicio-card">
+          <i class="fa-solid fa-gears"></i>
+          <h5>Configuración</h5>
+          <p>Ajustes personalizados para tus equipos.</p>
+        </a>
+      </div>
+
+      <!-- SERVICIO 4 -->
+      <div class="col-md-3">
+        <a href="servicios.html" class="servicio-card">
+          <i class="fa-solid fa-user-tie"></i>
+          <h5>Asesoría</h5>
+          <p>Acompañamiento profesional y cercano.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="rs-footer">
+  <div class="container">
+    <div class="row gy-4 gx-5">
+
+
+      <!-- LOGO / INFO -->
+      <div class="col-md-3">
+        <h5 class="footer-title">
+          RSDigital Store
+        </h5>
+
+        <div class="footer-icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+
+        <p>
+          Tu tienda tecnológica de confianza. Calidad, innovación y los mejores
+          equipos para el hogar, el trabajo y el entretenimiento.
+        </p>
+      </div>
+
+      <!-- SECCIONES -->
+      <div class="col-md-3">
+        <h5 class="footer-title">Secciones</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- ENLACES -->
+      <div class="col-md-3">
+        <h5 class="footer-title">Enlaces Útiles</h5>
+        <ul class="footer-links">
+          <li><a href="politica.html">Política de Privacidad</a></li>
+          <li><a href="terminos.html">Términos del Servicio</a></li>
+          <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+          <li><a href="faq.html">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="col-md-3">
+        <h5 class="footer-title">Contáctanos</h5>
+
+        <p>
+          📍 Quito, Ecuador <br>
+          📞 +593 999 999 999 <br>
+          📧 <a href="contacto.html">richiedu37@gmail.com</a>
+        </p>
+
+        <div class="footer-social">
+  <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.tiktok.com/" target="_blank" class="social-icon">
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+  <a href="https://www.whatsapp.com/" target="_blank" class="social-icon">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="footer-copy">
+      © 2026 RSDigital Store. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+<!-- ===== MODAL CARRITO ===== -->
+<div class="modal fade" id="cartModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <i class="fas fa-cart-shopping"></i> Mi Carrito
+        </h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul id="cart-items" class="list-group"></ul>
+
+        <h5 class="text-end mt-3">
+          Total: $<span id="cart-total">0</span>
+        </h5>
+      </div>
+
+      <div class="modal-footer">
+
+  <button class="btn btn-outline-danger" onclick="clearCart()">
+    Vaciar carrito
+  </button>
+
+  <button class="btn btn-secondary" data-bs-dismiss="modal">
+    Cerrar
+  </button>
+
+  <button class="btn btn-success">
+    Finalizar Compra
+  </button>
+
+</div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS del carrito -->
+<script src="java/cart.js"></script>
+</body>
+</html>
+
+
